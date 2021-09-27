@@ -111,13 +111,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: solid 1px #e4e4e4;
-		color: #00a87d; /*374535*/
+		color: #5e9184; /*#00a87d;*/ /*#374535;*/ /*#4a6e45;*/
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #5e9184 !important;
+			color: #00a87d !important; /*#5e9184*/
 		}
 
 	strong, b {
@@ -3340,6 +3340,64 @@ input, select, textarea {
 	
 	
 	
+	#myBtn2 img {
+		z-index: 2;
+		display: none;
+		max-height: 40vh;
+		max-width: 40vw
+	}
+	
+	#myBtn2:hover img {
+		z-index: 1;
+		position: absolute;
+		left: 20%;
+		right: 20%;
+		display: flex
+	}
+	
+	
+		/* The research (background) */
+	.research {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 2; /* Sit on top */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: disabled; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		-webkit-animation-name: fadeIn; /* Fade in the background */
+		-webkit-animation-duration: 0.4s;
+		animation-name: fadeIn;
+		animation-duration: 0.4s;
+		backdrop-filter: blur(3px);
+	}
+	
+		/* Research Content */
+	.research-content {
+		position: absolute;
+		bottom: 5%;
+		display: inline-block;
+		left: 20%;
+		right: 20%;
+		background-color: rgba(0,0,0,0);
+		-webkit-animation-name: slideIn;
+		-webkit-animation-duration: 0.4s;
+		animation-name: slideIn;
+		animation-duration: 0.4s;
+		text-align: center
+	}
+	
+	.research-content img{
+		display: inline;
+		max-height: 75vh;
+		max-width: 95vw;
+		margin-left: -20vw;
+		margin-right: -20vw
+	}
+	
 	/* The Modal (background) */
 	.modal {
 		display: none; /* Hidden by default */
@@ -3355,7 +3413,8 @@ input, select, textarea {
 		-webkit-animation-name: fadeIn; /* Fade in the background */
 		-webkit-animation-duration: 0.4s;
 		animation-name: fadeIn;
-		animation-duration: 0.4s
+		animation-duration: 0.4s;
+		backdrop-filter: blur(3px);
 	}
 
 	/* Modal Content */
