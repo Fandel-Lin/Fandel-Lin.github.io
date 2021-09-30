@@ -1769,6 +1769,13 @@ input, select, textarea {
 			padding-left: 1.5em;
 		}
 		
+		/*.container */#news p {
+			padding-bottom: 0.6em;
+			text-indent: -1.4em;
+			padding-left: 1.5em;
+			margin-bottom: 0;
+		}
+		
 /* Section/Article */
 
 	section.special, article.special {
