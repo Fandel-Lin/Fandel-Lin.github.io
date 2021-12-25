@@ -3362,6 +3362,21 @@ input, select, textarea {
 		display: flex
 	}
 	
+	#myBtn3 img {
+		z-index: 2;
+		display: none;
+		max-height: 40vh;
+		max-width: 40vw
+	}
+	
+	#myBtn3:hover img {
+		z-index: 1;
+		position: absolute;
+		left: 20%;
+		right: 20%;
+		display: flex
+	}
+	
 	
 		/* The research (background) */
 	.research {
