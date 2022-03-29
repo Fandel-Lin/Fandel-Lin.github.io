@@ -1,5 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 
 /*
 	Read Only by HTML5 UP
@@ -3346,6 +3347,20 @@ input, select, textarea {
 	}
 	
 	
+	#myBtn3 img {
+		z-index: 2;
+		display: none;
+		max-height: 40vh;
+		max-width: 40vw
+	}
+	
+	#myBtn3:hover img {
+		z-index: 1;
+		position: absolute;
+		left: 20%;
+		right: 20%;
+		display: flex
+	}
 	
 	#myBtn2 img {
 		z-index: 2;
@@ -3361,21 +3376,7 @@ input, select, textarea {
 		right: 20%;
 		display: flex
 	}
-	
-	#myBtn3 img {
-		z-index: 2;
-		display: none;
-		max-height: 40vh;
-		max-width: 40vw
-	}
-	
-	#myBtn3:hover img {
-		z-index: 1;
-		position: absolute;
-		left: 20%;
-		right: 20%;
-		display: flex
-	}
+
 	
 	
 		/* The research (background) */
