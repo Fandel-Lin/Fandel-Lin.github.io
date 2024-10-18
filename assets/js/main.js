@@ -27,6 +27,13 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+			
+			// Automatically set the counter-reset for each <ol> based on the number of <li> elements
+			$('ol').each(function() {
+				var $this = $(this);
+				var itemCount = $this.find('li').length;
+				$this.css('counter-reset', 'list-counter ' + (itemCount + 1)); // Start from itemCount
+			});
 		});
 
 	// Tweaks/fixes.

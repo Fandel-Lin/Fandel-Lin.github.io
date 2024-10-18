@@ -2261,15 +2261,57 @@ input, select, textarea {
 
 /* List */
 
+	
 	ol {
-		list-style: decimal;
-		margin: 0 0 2.25em 0;
-		padding-left: 1.25em;
+		list-style: none;
+		/*margin: 0 0 2.25em 0;*/
+		padding-left: 0;
+		counter-reset: list-counter;
 	}
 
-		ol li {
-			padding-left: 0.25em;
-		}
+	/* List item styling */
+	ol li {
+		position: relative;
+		padding-left: 4em; /* Add enough space for the custom counter */
+	}
+
+	/* Custom prefix styles and counter */
+	ol.reversed-journal li::before,
+	ol.reversed-conference li::before,
+	ol.reversed-tutorial li::before,
+	ol.reversed-thesis li::before {
+		position: absolute;
+		left: 0; /* Align the prefix to the leftmost part */
+		width: 3.5em; /* Allocate space for the custom prefix */
+		text-align: right; /* Align the prefix to the right */
+		font-size: 90%;
+	}
+
+	ol.reversed-journal li::before {
+		content: "[J" counter(list-counter) "] ";
+		counter-increment: list-counter -1;
+	}
+
+	ol.reversed-conference li::before {
+		content: "[C" counter(list-counter) "] ";
+		counter-increment: list-counter -1;
+	}
+
+	ol.reversed-tutorial li::before {
+		content: "[T" counter(list-counter) "] ";
+		counter-increment: list-counter -1;
+	}
+
+	ol.reversed-thesis li::before {
+		content: "[D" counter(list-counter) "] ";
+		counter-increment: list-counter -1;
+	}
+
+	/* Ensure proper text alignment */
+	ol li {
+		text-indent: 0; /* No text-indent, as we're using padding for alignment */
+	}
+
 
 	ul {
 		list-style: disc;
