@@ -233,5 +233,14 @@
 		}
 		
 		
-		
+		document.getElementById('toggle-news').addEventListener('click', function() {
+			var more = document.getElementById('more-news');
+			if (more.style.display === 'none') {
+				more.style.display = 'block';
+				this.textContent = 'Hide';
+			} else {
+				more.style.display = 'none';
+				this.textContent = 'Expand';
+			}
+		});
 })(jQuery);
