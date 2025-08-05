@@ -3617,3 +3617,11 @@ input, select, textarea {
 		}
 	}
 	
+	
+	.toggle-link {
+		cursor: pointer;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+		color: #5e9184;
+		margin-top: 0.5em;
+	}
