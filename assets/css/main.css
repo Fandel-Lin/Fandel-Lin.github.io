@@ -3415,34 +3415,23 @@ input, select, textarea {
 	}
 	
 	
-	#myBtn3 img {
+	#myBtn2 img,
+	#myBtn3 img,
+	#myBtn4 img {
 		z-index: 2;
 		display: none;
 		max-height: 40vh;
-		max-width: 40vw
+		max-width: 40vw;
 	}
-	
-	#myBtn3:hover img {
+
+	#myBtn2:hover img,
+	#myBtn3:hover img,
+	#myBtn4:hover img {
 		z-index: 1;
 		position: absolute;
 		left: 20%;
 		right: 20%;
-		display: flex
-	}
-	
-	#myBtn2 img {
-		z-index: 2;
-		display: none;
-		max-height: 40vh;
-		max-width: 40vw
-	}
-	
-	#myBtn2:hover img {
-		z-index: 1;
-		position: absolute;
-		left: 20%;
-		right: 20%;
-		display: flex
+		display: flex;
 	}
 
 	

@@ -197,9 +197,9 @@
 		var span2 = document.getElementsByClassName("close")[0];
 
 		// When the user clicks the button, open the modal 
-		btn2.onclick = function() {
-			modal2.style.display = "block";
-		}
+		//btn2.onclick = function() {
+		//	modal2.style.display = "block";
+		//}
 		
 
 		
@@ -230,7 +230,7 @@
 
 		// When the user clicks the button, open the modal 
 		btn4.onclick = function() {
-			modal3.style.display = "block";
+			modal4.style.display = "block";
 		}
 		
 		
@@ -252,14 +252,17 @@
 		}
 		
 		
-		document.getElementById('toggle-news').addEventListener('click', function() {
-			var more = document.getElementById('more-news');
-			if (more.style.display === 'none') {
-				more.style.display = 'block';
-				this.textContent = 'Hide';
-			} else {
-				more.style.display = 'none';
-				this.textContent = 'Expand';
-			}
-		});
+		var toggleNews = document.getElementById('toggle-news');
+		if (toggleNews) {
+			toggleNews.addEventListener('click', function() {
+				var more = document.getElementById('more-news');
+				if (more.style.display === 'none') {
+					more.style.display = 'block';
+					this.textContent = 'Hide';
+				} else {
+					more.style.display = 'none';
+					this.textContent = 'Expand';
+				}
+			});
+		}
 })(jQuery);
